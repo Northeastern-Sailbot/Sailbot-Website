@@ -1,13 +1,12 @@
-var div = $("<div>");
+var span = $("<div>");
 
 //MAKE LOGO
-var figure = $("<figure>");
-$("<img>").attr("src", "pics/mainLogo3.png").appendTo(figure);
-$("<figcaption>").text("NU SAILBOT").appendTo(figure);
+var logo = $("<div>").addClass('logo');
+$("<img>").attr("src", "pics/mainLogo3.png").appendTo(logo);
 
 
 //MAKE LINKS
-var bar = $("<ul>");
+var bar = $("<ul>").addClass('bar');
 $("<li>").text("Home").click(function() {
     $("#content").load("html/home.html");
 }).appendTo(bar);
@@ -27,7 +26,7 @@ $("<li>").text("Contact").click(function() {
     $("#content").load("html/contact.html");
 }).appendTo(bar);
 
-figure.appendTo(div);
-bar.appendTo(div);
-$("#navbar").append(div);
+logo.appendTo(span);
+bar.appendTo(span);
+$("#navbar").append(span);
 
