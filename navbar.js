@@ -3,6 +3,7 @@ var span = $("<div>");
 //MAKE LOGO
 var logo = $("<div>").addClass('logo');
 $("<img>").attr("src", "pics/mainLogo3.png").appendTo(logo);
+$("<p>").text('NU Sailbot').appendTo(logo);
 
 
 //MAKE LINKS
