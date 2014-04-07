@@ -1,0 +1,12 @@
+body {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+#content {
+	margin: 2% 15% 2% 15%;
+	padding: 0;
+	font-size: 14pt;
+	font-weight: normal;
+}
