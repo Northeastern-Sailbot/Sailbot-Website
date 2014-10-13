@@ -1,96 +1,54 @@
 
-/** Logo **/
-#navbar .logo {
-	float: left;
-	margin-right: 20px;
-	margin-left: 10%;
-}
-#navbar .logo p {
-	color: #000;
-	display: block;
-	height: 20px;
-	width: 120px;
-	margin-left: 25%;
-	padding-top: 0px;
-	text-decoration: none;
-	text-transform: uppercase;
-}
-
 /** Navigation **/
-#navbar {
-	background-color: #eee;
-	border-bottom: 1px solid #e6e6e6;
-	padding: 27px 0;
-	display: inline-block;
-	list-style: none;
-	line-height: 10px;
-	margin-left: 0;
+#header {
+	border-bottom: 0
+	margin: 0;
 	padding: 0;
 	width: 100%;
 	font-family: 'Orbitron';
+	font-size: 0;
 }
 
-#navbar ul {
+#header #logoBar {
+	background-color: #354463;
+	margin: 0;
+	padding: 0 20% 0 20%;
+}
+
+#header #navbar {
+	margin: 0;
+	padding: 0 20% 0 20%;
+	background-color: #424550;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+
+#header #navbar ul {
 	display: inline-block;
 	list-style: none;
+	padding: 0 10px 0 10px;
 	margin: 0;
-	padding: 0;
-}
-#navbar li {
-	float: left;
-	text-align: center;
-	color: #818181;
-	font-size: 20px;
-	line-height: 30px;
-	margin: 50px;
-	text-decoration: none;
-	vertical-align: text-bottom;
-}
-
-#navbar li:hover {
-	color: #000;
-	cursor: pointer;
-}
-
-/*#navbar li.active a {
-	color: #f99600;
-}*/
-
-/*#navbar {
-	display: inline-block;
-	list-style: none;
-	line-height: 30px;
-	margin: 0;
-	padding: 10px;
-	background-color: #EEEEEE;
 	width: 100%;
-	border-bottom: 1px solid #E6E6E6;
+	height: 100%;
 }
 
-#navbar .bar {
-	display: inline-block;
+
+#header #navbar li {	
 	float: left;
-	margin-left: 20%;
-}
-
-#navbar ul {
-	display: inline-block;
-	vertical-align: baseline;
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-#navbar li {
 	color: #818181;
-	display: inline;
-	font-size: 20px;
-	line-height: 80px;
 	text-decoration: none;
+	font-size: 20px;
+	padding: 10px;
 	text-align: center;
-	white-space: nowrap;
-	margin: 0 20px 0 20px;
 }
 
-#navbar li:hover {
+#header #navbar li .currentLink {
+	background-color: #000000;
+}
+
+#header #navbar li:hover {
+	background-color: #818181;
+	color: #000000;
 	cursor: pointer;
-}*/
+}

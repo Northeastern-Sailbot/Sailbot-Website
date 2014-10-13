@@ -1,23 +1,46 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<title>NU Sailbot</title>
 	<meta charset="UTF-8">
-	<script src="jquery.min.js"></script>
+	<meta name="description" content="Northeastern's International Robotic Sailing Regatta Team"/>
+	<meta name="ROBOTS" content="INDEX, FOLLOW">
+	
 	<link rel="stylesheet" href="page.css" />
-	<link rel="stylesheet" href="navbar.css" />
-	<link rel="stylesheet" href="footer.css" />
-	<link rel="stylesheet" href="page.css" />
-	<link href='http://fonts.googleapis.com/css?family=Inder|Orbitron' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="section.css" />
+    <link rel="icon" href="pics/MOST_CURRENT_LOGO.png" />
+    <link href='http://fonts.googleapis.com/css?family=Inder|Orbitron|Audiowide|Lemon|Averia+Sans+Libre|Prosto+One' rel='stylesheet' type='text/css'>
+    
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+    <script src="galleria/galleria-1.4.2.min.js"></script>  
 </head>
 <body>
-	<header id="navbar"> </header>
+    <script src="navbar.js"></script>
+	<header id="header"> 
+        <div id="logoBar"><img src="pics/Logos/IcelandSmall.png" /></div>
+        <div id="navbar">
+            <ul>
+                <li onclick="loadPage('html/home.html', 1)" id="L01">Home</li>
+                <li onclick="loadPage('html/the-competition.html', 2)" id="L02">The Competition</li>
+                <li onclick="loadPage('html/our-sailbot.html', 3)" id="L03">Our Sailbot</li>
+                <li onclick="loadPage('html/about-us.html', 4)" id="L04">About Us</li>
+                <li onclick="loadPage('html/gallery.html', 5)" id="L05">Gallery</li>
+                <li onclick="loadPage('html/contact.html', 6)" id="L06">Contact</li>
+            </ul>
+        </div>
+    </header>
 	<section id="sidebar"> </section>
-	<section id="content"> </section>
+	<section id="content"> </section><script>
+        $(document).ready(function() {
+            loadPage('html/home.html');
+        });
+    </script>
+	<script src="background.js"></script>
 	
-	<script src="navbar.js"></script>
-	<script>
-	    $("#content").load("home.html");
-	</script>
+	<section id="footer"> </section>
+	<script src="footer.js"></script>
+
 </body>
 </html>

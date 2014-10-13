@@ -1,1 +1,37 @@
 
+.profile {
+	border: 0; 
+	display: inline-block; 
+	overflow: hidden;
+	margin: 5px 0 5px 0;
+	padding: 5px 10px 5px 10px;
+}
+
+.profile h2 {
+	font-size: 20px;
+}
+
+.profile-list {
+	float: right;
+}
+
+.profile-list ul {
+	margin: 0;
+}
+
+.galleria {
+	 width: 1000px; 
+	 height: 600px; 
+	 background: #000;
+}
+
+#contactForum {
+	width: 400px;
+	height: 250px;
+	font-size: 16px;
+}
+
+#submit {
+	width: 140px;
+	height: 40px;
+}

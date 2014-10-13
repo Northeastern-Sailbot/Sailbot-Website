@@ -1,5 +1,13 @@
-<p>If you have any questions or comments, we'd love to hear from you! Please leave a message below:</p>
-<form>
-<textarea> </textarea>
-<button>Submit</button>
-</form>
+<script>
+    $('html, body').animate({scrollTop: '0px'}, 300);
+</script>
+
+	<p>If you have any questions or comments, we'd love to hear from you! Please leave a message below:</p>
+
+	<form method="post" action="../sendMessage.php">
+	   <p>Name: <input type="text" name="name" /></p>
+	   <p>Email: <input type="text" name="email" /></p>
+	   <h2>Message</h2>
+	   <textarea id="contactForum" name="message"> </textarea>
+	   <p><input id="submit" type="submit" name="submit" value="Submit" /></p>
+	</form>
